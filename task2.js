@@ -1,6 +1,8 @@
 /* Task 2 */
 
-let userNum = +prompt("Введите число от -10000 до 10000 включительно");
+/* let userNum = +prompt("Введите число от -10000 до 10000 включительно"); */
+
+let userNum = process.argv[1];
 
 if ((userNum > 0) && (userNum <= 10000)) {
 
