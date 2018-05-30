@@ -1,5 +1,7 @@
 /* Task 1 */
 
+let string = process.argv[1];
+
 function isPalindrome(str) {
     let strLen = str.length;
     let result = '';
@@ -14,9 +16,6 @@ function isPalindrome(str) {
     return result;
   }
 
-  test = isPalindrome('abcdedcba');
-  test2 = isPalindrome('abcded');
+  test = isPalindrome(string);
 
-  console.log(test);
-  console.log(test2);
-  process.stdout.write('isPalindrome result: ' + 'str - ' + test + ' str2 - ' + test2)
+  process.stdout.write(test)
