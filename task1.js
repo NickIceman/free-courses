@@ -1,3 +1,4 @@
+'use strict'
 let string = process.argv[1];
 
 function isPalindrome(str) {
