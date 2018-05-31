@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 let userNum = process.argv[1];
 
 if ((userNum > 0) && (userNum <= 10000)) {
