@@ -1,3 +1,5 @@
+/* Task 1 */
+
 let string = process.argv[1];
 
 function isPalindrome(str) {
