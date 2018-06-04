@@ -1,6 +1,6 @@
 /* Task 2 */
 
-let userNum = process.argv[1];
+let userNum = process.argv[2];
 
 if ((userNum > 0) && (userNum <= 10000)) {
 
