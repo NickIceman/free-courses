@@ -1,6 +1,6 @@
 /* Task 1 */
 
-let string = process.argv[1];
+let string = process.argv[2];
 
 function isPalindrome(str) {
     let strLen = str.length;
