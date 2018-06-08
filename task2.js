@@ -23,4 +23,4 @@ if ((userNum > 0) && (userNum <= 10000)) {
     process.stdout.write(userNum);
 } else process.stdout.write("Неверный ввод данных!");
 
-process.stdout.write("Fn: " + fib(userNum))
+process.stdout.write(fib(userNum))
