@@ -19,8 +19,11 @@ if ((userNum > 0) && (userNum <= 10000)) {
 
         else return fib(n + 2) - fib(n + 1);
     }
+    
 } else if (userNum === 0) {
-    process.stdout.write(userNum);
-} else process.stdout.write("Неверный ввод данных!");
+    
+    function fib(n) {return 0}
+    
+} else console.log("Неверный ввод данных!");
 
-process.stdout.write(fib(userNum))
+console.log(fib(userNum))
