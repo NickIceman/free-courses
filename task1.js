@@ -1,21 +1,15 @@
 /* Task 1 */
 
-let string = process.argv[2];
+const str = process.argv[2];
 
-function isPalindrome(str) {
-    let strLen = str.length;
-    let result = '';
-    for (let i = 0; i < strLen; i++) {
-        if (str[i] === str[strLen - 1 - i])
-            result = 'YES';
-    } else {
-        result = 'NO';
-        return result;
-    }
-}
-return result;
+function palindrome(str) {
+    let removeChar = str.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+    let checkPalindrome = removeChar.split('').reverse().join('');
+    return (removeChar === checkPalindrome);
 }
 
-test = isPalindrome(string);
-
-process.stdout.write(test)
+if (palindrome(str) === true) {
+    process.stdout.write("YES")
+} else {
+    process.stdout.write("NO")
+}
